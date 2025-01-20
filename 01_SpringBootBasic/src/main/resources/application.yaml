@@ -1,0 +1,45 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+
+
+# 字符串
+address: "hangzhou"
+# 无特殊字符时，可以省略 双引号
+address2: hangzhou
+# 存在特殊字符时需要使用 双引号
+address3: "zhejiang\thangzhou"
+
+# 数字
+count: 10
+price: 12.12
+
+# 日期，注意，使用 @Value 读取日期需要 @DateTimeFormat(pattern = "yyyy-MM-dd") 指定日期格式
+date: 2025-01-20
+
+# 对象
+user:
+  name: zhangsan
+  age: 20
+
+# 数组
+lang:
+  - zhhans
+  - zhhant
+  - en
+
+lang2: [ zh-hans, zh-hant, en ]
+
+# 数组2
+users:
+  - name: zhangsan
+    age: 20
+  - name: lisi
+    age: 21
+
+users2: [ { name: zhangsan, age: 20 }, { name: lisi, age: 21 } ]
+
+# 引用变量
+rootDir: /root/usr
+tempDir: ${rootDir}/temp
+
