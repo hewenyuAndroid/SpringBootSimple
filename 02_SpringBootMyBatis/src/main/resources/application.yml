@@ -1,0 +1,29 @@
+#下面这些内容是为了让MyBatis映射
+mybatis:
+  #指定Mybatis的Mapper文件
+  mapper-locations: classpath:mappers/*xml
+  #指定Mybatis的实体目录
+  type-aliases-package: com.example.springbootmybatis.mybatis.entity
+
+# mysql数据库表默认信息
+#     id  name        type          description
+#------  ----------  ------------  ---------------------------------------------------------------------------------------------------
+#     1  Java        编程语言          Java 是一种广泛使用的编程语言，适用于多平台开发。
+#     2  C++         编程语言          C++ 是一种支持面向对象编程的高效语言。
+#     3  Python      编程语言          Python 是一种简单易学的高级编程语言，广泛应用于数据分析和人工智能。
+#     4  JavaScript  编程语言          JavaScript 用于网页开发，是前端开发的核心语言。
+#     5  Ruby        编程语言          Ruby 是一种动态的编程语言，强调简单和生产力。
+#     6  Go          编程语言          Go 是由 Google 开发的开源编程语言，主要用于云计算和大规模系统开发。
+#     7  Swift       编程语言          Swift 是苹果公司开发的编程语言，主要用于iOS应用开发。
+#     8  Kotlin      编程语言          Kotlin 是一种现代化的编程语言，兼容 Java，广泛用于安卓开发。
+#     9  PHP         编程语言          PHP 是一种广泛应用于 Web 开发的服务器端脚本语言。
+#    10  C#          编程语言          C# 是微软推出的编程语言，常用于 Windows 平台和游戏开发。
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring
+    username: root
+    password: 123456
+
+

@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c02f406-6cc3-422c-878c-1daee4189616" name="Changes" comment="initializer&#10;完成hello world.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_SpringBootBasic/src/main/java/com/example/springbootbasic/controller/yaml/LangArrYAML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_SpringBootBasic/src/main/java/com/example/springbootbasic/controller/yaml/UserYaml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_SpringBootBasic/src/main/java/com/example/springbootbasic/controller/yaml/YamlController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="7c02f406-6cc3-422c-878c-1daee4189616" name="Changes" comment="Spring boot 整合mybatis">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_SpringBootBasic/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/01_SpringBootBasic/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_SpringBootMyBatis/src/main/java/com/example/springbootmybatis/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_SpringBootMyBatis/src/main/java/com/example/springbootmybatis/dao/BookDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_SpringBootMyBatis/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/02_SpringBootMyBatis/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -37,28 +33,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "11",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.ApplicationTests.getAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ApplicationTests.getByName.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="JUnit.ApplicationTests.getByName">
+    <configuration name="ApplicationTests.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootMyBatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.springbootmybatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.springbootmybatis" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootmybatis.ApplicationTests" />
+      <option name="METHOD_NAME" value="getAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationTests.getByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootMyBatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.springbootmybatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.springbootmybatis" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootmybatis.ApplicationTests" />
+      <option name="METHOD_NAME" value="getByName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="SpringBootBasic" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springbootbasic.Application" />
@@ -74,6 +104,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApplicationTests.getByName" />
+        <item itemvalue="JUnit.ApplicationTests.getAll" />
         <item itemvalue="Spring Boot.Application" />
       </list>
     </recent_temporary>
@@ -95,7 +127,8 @@
       <option name="presentableId" value="Default" />
       <updated>1737358822323</updated>
       <workItem from="1737358823373" duration="7251000" />
-      <workItem from="1737384906701" duration="1825000" />
+      <workItem from="1737384906701" duration="2910000" />
+      <workItem from="1737425329342" duration="330000" />
     </task>
     <task id="LOCAL-00001" summary="initializer&#10;完成hello world.">
       <option name="closed" value="true" />
@@ -105,7 +138,31 @@
       <option name="project" value="LOCAL" />
       <updated>1737359165367</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="yaml配置文件解析">
+      <option name="closed" value="true" />
+      <created>1737386960078</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737386960078</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Spring boot 整合mybatis">
+      <option name="closed" value="true" />
+      <created>1737387747308</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737387747308</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Spring boot 整合mybatis">
+      <option name="closed" value="true" />
+      <created>1737387956384</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737387956384</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +170,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initializer&#10;完成hello world." />
-    <option name="LAST_COMMIT_MESSAGE" value="initializer&#10;完成hello world." />
+    <MESSAGE value="yaml配置文件解析" />
+    <MESSAGE value="Spring boot 整合mybatis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring boot 整合mybatis" />
   </component>
 </project>
