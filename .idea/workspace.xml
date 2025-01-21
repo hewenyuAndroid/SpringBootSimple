@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c02f406-6cc3-422c-878c-1daee4189616" name="Changes" comment="Spring boot 整合mybatis">
-      <change afterPath="$PROJECT_DIR$/03_SpringBootMyBatisPlus/src/main/java/com/example/springbootmybatisplus/dao/BookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_SpringBootMyBatisPlus/src/main/java/com/example/springbootmybatisplus/domain/Book.java" afterDir="false" />
+    <list default="true" id="7c02f406-6cc3-422c-878c-1daee4189616" name="Changes" comment="Spring boot 整合mybatis-plus">
+      <change afterPath="$PROJECT_DIR$/04_SpringBootDruid/src/main/java/com/example/springbootdruid/dao/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_SpringBootDruid/src/main/java/com/example/springbootdruid/domain/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_SpringBootDruid/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -39,6 +40,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.ApplicationTests.getAll (1).executor": "Run",
+    "JUnit.ApplicationTests.getAll (2).executor": "Run",
     "JUnit.ApplicationTests.getAll.executor": "Run",
     "JUnit.ApplicationTests.getById.executor": "Run",
     "JUnit.ApplicationTests.getByName (1).executor": "Run",
@@ -62,7 +64,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ApplicationTests.getByName (1)">
+  <component name="RunManager" selected="JUnit.ApplicationTests.getByName (2)">
     <configuration name="ApplicationTests.getAll (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootMyBatisPlus" />
       <extension name="coverage">
@@ -79,16 +81,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationTests.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootMyBatis" />
+    <configuration name="ApplicationTests.getAll (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootDruid" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.springbootmybatis.*" />
+          <option name="PATTERN" value="com.example.springbootdruid.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.springbootmybatis" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootmybatis.ApplicationTests" />
+      <option name="PACKAGE_NAME" value="com.example.springbootdruid" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootdruid.ApplicationTests" />
       <option name="METHOD_NAME" value="getAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -127,16 +129,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationTests.getByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootMyBatis" />
+    <configuration name="ApplicationTests.getByName (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootDruid" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.springbootmybatis.*" />
+          <option name="PATTERN" value="com.example.springbootdruid.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.springbootmybatis" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootmybatis.ApplicationTests" />
+      <option name="PACKAGE_NAME" value="com.example.springbootdruid" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootdruid.ApplicationTests" />
       <option name="METHOD_NAME" value="getByName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -145,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApplicationTests.getByName (2)" />
+        <item itemvalue="JUnit.ApplicationTests.getAll (2)" />
         <item itemvalue="JUnit.ApplicationTests.getByName (1)" />
         <item itemvalue="JUnit.ApplicationTests.getById" />
         <item itemvalue="JUnit.ApplicationTests.getAll (1)" />
-        <item itemvalue="JUnit.ApplicationTests.getByName" />
-        <item itemvalue="JUnit.ApplicationTests.getAll" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +173,7 @@
       <updated>1737358822323</updated>
       <workItem from="1737358823373" duration="7251000" />
       <workItem from="1737384906701" duration="2910000" />
-      <workItem from="1737425329342" duration="3026000" />
+      <workItem from="1737425329342" duration="6745000" />
     </task>
     <task id="LOCAL-00001" summary="initializer&#10;完成hello world.">
       <option name="closed" value="true" />
@@ -213,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737425682470</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Spring boot 整合mybatis-plus">
+      <option name="closed" value="true" />
+      <created>1737430134342</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737430134342</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +233,7 @@
     <MESSAGE value="initializer&#10;完成hello world." />
     <MESSAGE value="yaml配置文件解析" />
     <MESSAGE value="Spring boot 整合mybatis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring boot 整合mybatis" />
+    <MESSAGE value="Spring boot 整合mybatis-plus" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring boot 整合mybatis-plus" />
   </component>
 </project>

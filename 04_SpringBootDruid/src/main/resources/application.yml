@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      # SpringBoot版本低于2.4.3(不含)，Mysql驱动版本大于8.0时，需要在url连接串中配置时区
+      url: jdbc:mysql://localhost:3306/spring?serverTimezone=UTC
+      username: root
+      password: 123456
