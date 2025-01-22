@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c02f406-6cc3-422c-878c-1daee4189616" name="Changes" comment="Spring boot 整合mybatis-plus">
-      <change afterPath="$PROJECT_DIR$/04_SpringBootDruid/src/main/java/com/example/springbootdruid/dao/BookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_SpringBootDruid/src/main/java/com/example/springbootdruid/domain/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_SpringBootDruid/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="7c02f406-6cc3-422c-878c-1daee4189616" name="Changes" comment="Spring boot 整合 druid">
+      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/config/MPConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/dao/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/domain/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -39,11 +39,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ApplicationDaoCase.getAll.executor": "Run",
+    "JUnit.ApplicationDaoCase.testDelete.executor": "Run",
+    "JUnit.ApplicationDaoCase.testQueryBy.executor": "Run",
+    "JUnit.ApplicationDaoCase.testQueryBy2.executor": "Run",
+    "JUnit.ApplicationDaoCase.testQueryById.executor": "Run",
+    "JUnit.ApplicationDaoCase.testQueryPage.executor": "Run",
+    "JUnit.ApplicationDaoCase.testSave.executor": "Run",
+    "JUnit.ApplicationDaoCase.testUpdate.executor": "Run",
     "JUnit.ApplicationTests.getAll (1).executor": "Run",
     "JUnit.ApplicationTests.getAll (2).executor": "Run",
     "JUnit.ApplicationTests.getAll.executor": "Run",
     "JUnit.ApplicationTests.getById.executor": "Run",
     "JUnit.ApplicationTests.getByName (1).executor": "Run",
+    "JUnit.ApplicationTests.getByName (2).executor": "Run",
     "JUnit.ApplicationTests.getByName.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -64,82 +73,82 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ApplicationTests.getByName (2)">
-    <configuration name="ApplicationTests.getAll (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootMyBatisPlus" />
+  <component name="RunManager" selected="JUnit.ApplicationDaoCase.testQueryBy2">
+    <configuration name="ApplicationDaoCase.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootSSMP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.springbootmybatisplus.*" />
+          <option name="PATTERN" value="com.example.springbootssmp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.springbootmybatisplus" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootmybatisplus.ApplicationTests" />
-      <option name="METHOD_NAME" value="getAll" />
+      <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationDaoCase" />
+      <option name="METHOD_NAME" value="testDelete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationTests.getAll (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootDruid" />
+    <configuration name="ApplicationDaoCase.testQueryBy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootSSMP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.springbootdruid.*" />
+          <option name="PATTERN" value="com.example.springbootssmp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.springbootdruid" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootdruid.ApplicationTests" />
-      <option name="METHOD_NAME" value="getAll" />
+      <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationDaoCase" />
+      <option name="METHOD_NAME" value="testQueryBy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationTests.getById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootMyBatisPlus" />
+    <configuration name="ApplicationDaoCase.testQueryBy2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootSSMP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.springbootmybatisplus.*" />
+          <option name="PATTERN" value="com.example.springbootssmp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.springbootmybatisplus" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootmybatisplus.ApplicationTests" />
-      <option name="METHOD_NAME" value="getById" />
+      <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationDaoCase" />
+      <option name="METHOD_NAME" value="testQueryBy2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationTests.getByName (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootMyBatisPlus" />
+    <configuration name="ApplicationDaoCase.testQueryById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootSSMP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.springbootmybatisplus.*" />
+          <option name="PATTERN" value="com.example.springbootssmp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.springbootmybatisplus" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootmybatisplus.ApplicationTests" />
-      <option name="METHOD_NAME" value="getByName" />
+      <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationDaoCase" />
+      <option name="METHOD_NAME" value="testQueryById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationTests.getByName (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootDruid" />
+    <configuration name="ApplicationDaoCase.testQueryPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootSSMP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.springbootdruid.*" />
+          <option name="PATTERN" value="com.example.springbootssmp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.springbootdruid" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootdruid.ApplicationTests" />
-      <option name="METHOD_NAME" value="getByName" />
+      <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationDaoCase" />
+      <option name="METHOD_NAME" value="testQueryPage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApplicationTests.getByName (2)" />
-        <item itemvalue="JUnit.ApplicationTests.getAll (2)" />
-        <item itemvalue="JUnit.ApplicationTests.getByName (1)" />
-        <item itemvalue="JUnit.ApplicationTests.getById" />
-        <item itemvalue="JUnit.ApplicationTests.getAll (1)" />
+        <item itemvalue="JUnit.ApplicationDaoCase.testQueryBy2" />
+        <item itemvalue="JUnit.ApplicationDaoCase.testQueryBy" />
+        <item itemvalue="JUnit.ApplicationDaoCase.testQueryPage" />
+        <item itemvalue="JUnit.ApplicationDaoCase.testQueryById" />
+        <item itemvalue="JUnit.ApplicationDaoCase.testDelete" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +182,8 @@
       <updated>1737358822323</updated>
       <workItem from="1737358823373" duration="7251000" />
       <workItem from="1737384906701" duration="2910000" />
-      <workItem from="1737425329342" duration="6745000" />
+      <workItem from="1737425329342" duration="13381000" />
+      <workItem from="1737515080626" duration="3320000" />
     </task>
     <task id="LOCAL-00001" summary="initializer&#10;完成hello world.">
       <option name="closed" value="true" />
@@ -223,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737430134342</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Spring boot 整合 druid">
+      <option name="closed" value="true" />
+      <created>1737441330747</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737441330747</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,6 +252,7 @@
     <MESSAGE value="yaml配置文件解析" />
     <MESSAGE value="Spring boot 整合mybatis" />
     <MESSAGE value="Spring boot 整合mybatis-plus" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring boot 整合mybatis-plus" />
+    <MESSAGE value="Spring boot 整合 druid" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring boot 整合 druid" />
   </component>
 </project>

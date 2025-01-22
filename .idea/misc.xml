@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/02_SpringBootMyBatis/pom.xml" />
         <option value="$PROJECT_DIR$/03_SpringBootMyBatisPlus/pom.xml" />
         <option value="$PROJECT_DIR$/04_SpringBootDruid/pom.xml" />
+        <option value="$PROJECT_DIR$/05_SpringBootSSMP/pom.xml" />
       </list>
     </option>
   </component>
