@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c02f406-6cc3-422c-878c-1daee4189616" name="Changes" comment="Spring boot SSMP案例service层接口测试">
-      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/service/IAutoBookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/service/impl/AutoBookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/test/java/com/example/springbootssmp/ApplicationAutoServiceCase.java" afterDir="false" />
+    <list default="true" id="7c02f406-6cc3-422c-878c-1daee4189616" name="Changes" comment="Spring boot SSMP案例 使用mp实现service层服务单元测试">
+      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/controller/BookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/service/impl/BookServiceDefaultImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05_SpringBootSSMP/src/test/java/com/example/springbootssmp/ApplicationServiceCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/test/java/com/example/springbootssmp/ApplicationServiceCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +34,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ApplicationAutoServiceCase.testAdd.executor": "Run",
+    "JUnit.ApplicationAutoServiceCase.testDelete.executor": "Run",
+    "JUnit.ApplicationAutoServiceCase.testQueryAll.executor": "Run",
+    "JUnit.ApplicationAutoServiceCase.testQueryById.executor": "Run",
+    "JUnit.ApplicationAutoServiceCase.testQueryPage.executor": "Run",
+    "JUnit.ApplicationAutoServiceCase.testUpdate.executor": "Run",
     "JUnit.ApplicationDaoCase.getAll.executor": "Run",
     "JUnit.ApplicationDaoCase.testDelete.executor": "Run",
     "JUnit.ApplicationDaoCase.testQueryBy.executor": "Run",
@@ -83,7 +85,7 @@
       <recent name="com.example.springbootssmp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApplicationAutoServiceCase.testQueryPage">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="ApplicationAutoServiceCase.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootSSMP" />
       <extension name="coverage">
@@ -111,22 +113,6 @@
       <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
       <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationAutoServiceCase" />
       <option name="METHOD_NAME" value="testDelete" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApplicationAutoServiceCase.testQueryById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootSSMP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.springbootssmp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationAutoServiceCase" />
-      <option name="METHOD_NAME" value="testQueryById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,13 +150,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootSSMP" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springbootssmp.Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.springbootssmp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application" />
         <item itemvalue="JUnit.ApplicationAutoServiceCase.testQueryPage" />
         <item itemvalue="JUnit.ApplicationAutoServiceCase.testDelete" />
         <item itemvalue="JUnit.ApplicationAutoServiceCase.testUpdate" />
         <item itemvalue="JUnit.ApplicationAutoServiceCase.testAdd" />
-        <item itemvalue="JUnit.ApplicationAutoServiceCase.testQueryById" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +192,7 @@
       <workItem from="1737358823373" duration="7251000" />
       <workItem from="1737384906701" duration="2910000" />
       <workItem from="1737425329342" duration="13381000" />
-      <workItem from="1737515080626" duration="4990000" />
+      <workItem from="1737515080626" duration="6800000" />
     </task>
     <task id="LOCAL-00001" summary="initializer&#10;完成hello world.">
       <option name="closed" value="true" />
@@ -267,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737528039767</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Spring boot SSMP案例 使用mp实现service层服务单元测试">
+      <option name="closed" value="true" />
+      <created>1737528593237</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1737528593237</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +288,8 @@
     <MESSAGE value="Spring boot 整合 druid" />
     <MESSAGE value="Spring boot SSMP案例dao层接口测试" />
     <MESSAGE value="Spring boot SSMP案例service层接口测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring boot SSMP案例service层接口测试" />
+    <MESSAGE value="Spring boot SSMP案例 使用mp实现service层服务单元测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring boot SSMP案例 使用mp实现service层服务单元测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
