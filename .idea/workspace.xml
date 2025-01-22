@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c02f406-6cc3-422c-878c-1daee4189616" name="Changes" comment="Spring boot 整合 druid">
-      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/config/MPConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/dao/BookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/domain/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7c02f406-6cc3-422c-878c-1daee4189616" name="Changes" comment="Spring boot SSMP案例dao层接口测试">
+      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/service/IBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/service/impl/BookServiceDefaultImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/test/java/com/example/springbootssmp/ApplicationServiceCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +44,7 @@
     "JUnit.ApplicationDaoCase.testQueryPage.executor": "Run",
     "JUnit.ApplicationDaoCase.testSave.executor": "Run",
     "JUnit.ApplicationDaoCase.testUpdate.executor": "Run",
+    "JUnit.ApplicationServiceCase.testQueryAll.executor": "Debug",
     "JUnit.ApplicationTests.getAll (1).executor": "Run",
     "JUnit.ApplicationTests.getAll (2).executor": "Run",
     "JUnit.ApplicationTests.getAll.executor": "Run",
@@ -73,8 +71,8 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ApplicationDaoCase.testQueryBy2">
-    <configuration name="ApplicationDaoCase.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ApplicationServiceCase.testQueryPage">
+    <configuration name="ApplicationServiceCase.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootSSMP" />
       <extension name="coverage">
         <pattern>
@@ -83,14 +81,30 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationDaoCase" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationServiceCase" />
+      <option name="METHOD_NAME" value="testAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationServiceCase.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootSSMP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.springbootssmp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationServiceCase" />
       <option name="METHOD_NAME" value="testDelete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationDaoCase.testQueryBy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicationServiceCase.testQueryById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootSSMP" />
       <extension name="coverage">
         <pattern>
@@ -99,46 +113,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationDaoCase" />
-      <option name="METHOD_NAME" value="testQueryBy" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApplicationDaoCase.testQueryBy2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootSSMP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.springbootssmp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationDaoCase" />
-      <option name="METHOD_NAME" value="testQueryBy2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApplicationDaoCase.testQueryById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootSSMP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.springbootssmp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationDaoCase" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationServiceCase" />
       <option name="METHOD_NAME" value="testQueryById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationDaoCase.testQueryPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicationServiceCase.testQueryPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootSSMP" />
       <extension name="coverage">
         <pattern>
@@ -147,8 +129,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationDaoCase" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationServiceCase" />
       <option name="METHOD_NAME" value="testQueryPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationServiceCase.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootSSMP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.springbootssmp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationServiceCase" />
+      <option name="METHOD_NAME" value="testUpdate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApplicationDaoCase.testQueryBy2" />
-        <item itemvalue="JUnit.ApplicationDaoCase.testQueryBy" />
-        <item itemvalue="JUnit.ApplicationDaoCase.testQueryPage" />
-        <item itemvalue="JUnit.ApplicationDaoCase.testQueryById" />
-        <item itemvalue="JUnit.ApplicationDaoCase.testDelete" />
+        <item itemvalue="JUnit.ApplicationServiceCase.testQueryPage" />
+        <item itemvalue="JUnit.ApplicationServiceCase.testDelete" />
+        <item itemvalue="JUnit.ApplicationServiceCase.testUpdate" />
+        <item itemvalue="JUnit.ApplicationServiceCase.testAdd" />
+        <item itemvalue="JUnit.ApplicationServiceCase.testQueryById" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +181,7 @@
       <workItem from="1737358823373" duration="7251000" />
       <workItem from="1737384906701" duration="2910000" />
       <workItem from="1737425329342" duration="13381000" />
-      <workItem from="1737515080626" duration="3320000" />
+      <workItem from="1737515080626" duration="4454000" />
     </task>
     <task id="LOCAL-00001" summary="initializer&#10;完成hello world.">
       <option name="closed" value="true" />
@@ -241,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737441330747</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Spring boot SSMP案例dao层接口测试">
+      <option name="closed" value="true" />
+      <created>1737526870951</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1737526870951</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +259,17 @@
     <MESSAGE value="Spring boot 整合mybatis" />
     <MESSAGE value="Spring boot 整合mybatis-plus" />
     <MESSAGE value="Spring boot 整合 druid" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring boot 整合 druid" />
+    <MESSAGE value="Spring boot SSMP案例dao层接口测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring boot SSMP案例dao层接口测试" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
