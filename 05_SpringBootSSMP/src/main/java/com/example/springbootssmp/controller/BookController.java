@@ -2,12 +2,11 @@ package com.example.springbootssmp.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.example.springbootssmp.controller.utils.R;
 import com.example.springbootssmp.domain.Book;
 import com.example.springbootssmp.service.impl.AutoBookServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/books")
@@ -17,34 +16,38 @@ public class BookController {
     private AutoBookServiceImpl bookService;
 
     @GetMapping
-    public List<Book> queryAll() {
-        return bookService.list();
+    public R queryAll() {
+        return new R(true, bookService.list());
     }
 
     @PostMapping
-    public Boolean save(@RequestBody Book book) {
-        return bookService.save(book);
+    public R save(@RequestBody Book book) {
+        boolean result = bookService.save(book);
+        return new R(result, result ? "success" : "failure");
     }
 
     @PutMapping
-    public Boolean update(@RequestBody Book book) {
-        return bookService.updateById(book);
+    public R update(@RequestBody Book book) {
+        boolean result = bookService.updateById(book);
+        return new R(result, result ? "success" : "failure");
     }
 
     @GetMapping("{id}")
-    public Book getById(@PathVariable int id) {
-        return bookService.getById(id);
+    public R getById(@PathVariable int id) {
+        Book book = bookService.getById(id);
+        return new R(book != null, book);
     }
 
     @DeleteMapping("{id}")
-    public Boolean deleteById(@PathVariable int id) {
-        return bookService.removeById(id);
+    public R deleteById(@PathVariable int id) {
+        return new R(bookService.removeById(id));
     }
 
     @GetMapping("{pageNo}/{pageSize}")
-    public IPage<Book> pageQuery(@PathVariable int pageNo, @PathVariable int pageSize) {
+    public R pageQuery(@PathVariable int pageNo, @PathVariable int pageSize) {
         IPage<Book> page = new Page<>(pageNo, pageSize);
-        return bookService.page(page);
+        bookService.page(page);
+        return new R(true, page);
     }
 
 }

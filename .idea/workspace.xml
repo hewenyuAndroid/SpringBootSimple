@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c02f406-6cc3-422c-878c-1daee4189616" name="Changes" comment="Spring boot SSMP案例 使用mp实现service层服务单元测试">
-      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/controller/BookController.java" afterDir="false" />
+    <list default="true" id="7c02f406-6cc3-422c-878c-1daee4189616" name="Changes" comment="Spring boot SSMP案例 controller层curd操作">
+      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/controller/BookController2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/controller/utils/R.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/controller/BookController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +84,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.springbootssmp.controller" />
       <recent name="com.example.springbootssmp" />
     </key>
   </component>
@@ -192,7 +195,7 @@
       <workItem from="1737358823373" duration="7251000" />
       <workItem from="1737384906701" duration="2910000" />
       <workItem from="1737425329342" duration="13381000" />
-      <workItem from="1737515080626" duration="6800000" />
+      <workItem from="1737515080626" duration="8608000" />
     </task>
     <task id="LOCAL-00001" summary="initializer&#10;完成hello world.">
       <option name="closed" value="true" />
@@ -274,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737528593237</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Spring boot SSMP案例 controller层curd操作">
+      <option name="closed" value="true" />
+      <created>1737531028286</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1737531028286</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +300,8 @@
     <MESSAGE value="Spring boot SSMP案例dao层接口测试" />
     <MESSAGE value="Spring boot SSMP案例service层接口测试" />
     <MESSAGE value="Spring boot SSMP案例 使用mp实现service层服务单元测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring boot SSMP案例 使用mp实现service层服务单元测试" />
+    <MESSAGE value="Spring boot SSMP案例 controller层curd操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring boot SSMP案例 controller层curd操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
