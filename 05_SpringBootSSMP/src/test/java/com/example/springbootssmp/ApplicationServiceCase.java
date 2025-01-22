@@ -2,7 +2,7 @@ package com.example.springbootssmp;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.example.springbootssmp.domain.Book;
-import com.example.springbootssmp.service.impl.BookServiceDefaultImpl;
+import com.example.springbootssmp.service.impl.BookServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,7 +13,7 @@ import java.util.List;
 public class ApplicationServiceCase {
 
     @Autowired
-    private BookServiceDefaultImpl service;
+    private BookServiceImpl service;
 
     @Test
     void testQueryAll() {

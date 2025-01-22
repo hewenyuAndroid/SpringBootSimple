@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c02f406-6cc3-422c-878c-1daee4189616" name="Changes" comment="Spring boot SSMP案例dao层接口测试">
-      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/service/IBookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/service/impl/BookServiceDefaultImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/test/java/com/example/springbootssmp/ApplicationServiceCase.java" afterDir="false" />
+    <list default="true" id="7c02f406-6cc3-422c-878c-1daee4189616" name="Changes" comment="Spring boot SSMP案例service层接口测试">
+      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/service/IAutoBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/service/impl/AutoBookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/test/java/com/example/springbootssmp/ApplicationAutoServiceCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/service/impl/BookServiceDefaultImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/main/java/com/example/springbootssmp/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_SpringBootSSMP/src/test/java/com/example/springbootssmp/ApplicationServiceCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/05_SpringBootSSMP/src/test/java/com/example/springbootssmp/ApplicationServiceCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,12 @@
     "JUnit.ApplicationDaoCase.testQueryPage.executor": "Run",
     "JUnit.ApplicationDaoCase.testSave.executor": "Run",
     "JUnit.ApplicationDaoCase.testUpdate.executor": "Run",
+    "JUnit.ApplicationServiceCase.testAdd.executor": "Run",
+    "JUnit.ApplicationServiceCase.testDelete.executor": "Run",
     "JUnit.ApplicationServiceCase.testQueryAll.executor": "Debug",
+    "JUnit.ApplicationServiceCase.testQueryById.executor": "Run",
+    "JUnit.ApplicationServiceCase.testQueryPage.executor": "Run",
+    "JUnit.ApplicationServiceCase.testUpdate.executor": "Run",
     "JUnit.ApplicationTests.getAll (1).executor": "Run",
     "JUnit.ApplicationTests.getAll (2).executor": "Run",
     "JUnit.ApplicationTests.getAll.executor": "Run",
@@ -71,8 +78,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ApplicationServiceCase.testQueryPage">
-    <configuration name="ApplicationServiceCase.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.springbootssmp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ApplicationAutoServiceCase.testQueryPage">
+    <configuration name="ApplicationAutoServiceCase.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootSSMP" />
       <extension name="coverage">
         <pattern>
@@ -81,14 +93,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationServiceCase" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationAutoServiceCase" />
       <option name="METHOD_NAME" value="testAdd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationServiceCase.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicationAutoServiceCase.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootSSMP" />
       <extension name="coverage">
         <pattern>
@@ -97,14 +109,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationServiceCase" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationAutoServiceCase" />
       <option name="METHOD_NAME" value="testDelete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationServiceCase.testQueryById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicationAutoServiceCase.testQueryById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootSSMP" />
       <extension name="coverage">
         <pattern>
@@ -113,14 +125,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationServiceCase" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationAutoServiceCase" />
       <option name="METHOD_NAME" value="testQueryById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationServiceCase.testQueryPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicationAutoServiceCase.testQueryPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootSSMP" />
       <extension name="coverage">
         <pattern>
@@ -129,14 +141,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationServiceCase" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationAutoServiceCase" />
       <option name="METHOD_NAME" value="testQueryPage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationServiceCase.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicationAutoServiceCase.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBootSSMP" />
       <extension name="coverage">
         <pattern>
@@ -145,7 +157,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.springbootssmp" />
-      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationServiceCase" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootssmp.ApplicationAutoServiceCase" />
       <option name="METHOD_NAME" value="testUpdate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -154,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApplicationServiceCase.testQueryPage" />
-        <item itemvalue="JUnit.ApplicationServiceCase.testDelete" />
-        <item itemvalue="JUnit.ApplicationServiceCase.testUpdate" />
-        <item itemvalue="JUnit.ApplicationServiceCase.testAdd" />
-        <item itemvalue="JUnit.ApplicationServiceCase.testQueryById" />
+        <item itemvalue="JUnit.ApplicationAutoServiceCase.testQueryPage" />
+        <item itemvalue="JUnit.ApplicationAutoServiceCase.testDelete" />
+        <item itemvalue="JUnit.ApplicationAutoServiceCase.testUpdate" />
+        <item itemvalue="JUnit.ApplicationAutoServiceCase.testAdd" />
+        <item itemvalue="JUnit.ApplicationAutoServiceCase.testQueryById" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +193,7 @@
       <workItem from="1737358823373" duration="7251000" />
       <workItem from="1737384906701" duration="2910000" />
       <workItem from="1737425329342" duration="13381000" />
-      <workItem from="1737515080626" duration="4454000" />
+      <workItem from="1737515080626" duration="4990000" />
     </task>
     <task id="LOCAL-00001" summary="initializer&#10;完成hello world.">
       <option name="closed" value="true" />
@@ -247,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737526870951</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Spring boot SSMP案例service层接口测试">
+      <option name="closed" value="true" />
+      <created>1737528039767</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1737528039767</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +280,8 @@
     <MESSAGE value="Spring boot 整合mybatis-plus" />
     <MESSAGE value="Spring boot 整合 druid" />
     <MESSAGE value="Spring boot SSMP案例dao层接口测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring boot SSMP案例dao层接口测试" />
+    <MESSAGE value="Spring boot SSMP案例service层接口测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring boot SSMP案例service层接口测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
